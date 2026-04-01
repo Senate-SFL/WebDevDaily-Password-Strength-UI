@@ -23,8 +23,8 @@
 .main-cont {
     height: 100vh;
     width: 100%;
-    /*background-color: rgb(176, 170, 193);*/
     background-color: rgb(158, 162, 171);
+    background: linear-gradient(to right, rgb(158, 162, 171) 60%, rgb(186, 188, 198))
 }
 
 .password-ui-cont {
