@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength UI</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="main-cont flex-center">
+        <div class="password-ui-cont">
+            <div class="grid-image">
+                <img src="images/grid-2.png">
+            </div>
+            <div class="password-ui-header">
+                <div class="password-ui-header-top">
+                    <img src="images/lock.png" height="20px" style="filter: invert(100%)"></img> <h2>Create password</h2>
+                </div>
+                <span class="header-sub">
+                    Choose a strong password to secure your account
+                </span>
+            </div>
+            <div class="password-ui-text-cont">
+                <div class="password-ui-eye"></div>
+                <input type="password" class="password-ui-text" name="password" placeholder="Passw@r" required />
+            </div>
+            <div class="password-meter-cont">
+                <div class="password-meter-header">
+                    <div class="password-strength">
+                        Password strength
+                    </div>
+                    <div class="password-level">
+                        <span class="level">Good</span>
+                    </div>
+                </div>
+                <div class="password-meter-solid-cont">
+                    <div class="password-meter-solid">
+                    </div>
+                </div>
+                <div class="password-meter-bars-cont">
+                    <div class="bar yellow-bar"></div>
+                    <div class="bar yellow-bar"></div>
+                    <div class="bar yellow-bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="password-footer-cont">
+                <div class="password-footer-header">
+                    Password must contain:
+                </div>
+                <div class="password-footer-list-cont">
+                    <ul>
+                        <li>
+                            <div class="password-footer-x flex-center"><img src='images/x-2.png' style="height: 22px; width: 21px"></div>
+                            <span class="password-footer-text">At least 8 characters</span>
+                        </li>
+                        <li>
+                            <div class="password-footer-x flex-center"><img src='images/check-2.png' style="height: 28px; width: 30px"></div>
+                            <span class="password-footer-text green-text">Uppercase letter (A-Z)</span>
+                        </li>
+                        <li>
+                            <div class="password-footer-x flex-center"><img src='images/check-2.png' style="height: 28px; width: 30px"></div>
+                            <span class="password-footer-text green-text">Lowercase letter (a-z)</span>
+                        </li>
+                        <li>
+                            <div class="password-footer-x flex-center"><img src='images/x-2.png' style="height: 22px; width: 21px"></div>
+                            <span class="password-footer-text">Number (0-9)</span>
+                        </li>
+                        <li>
+                            <div class="password-footer-x flex-center"><img src='images/check-2.png' style="height: 28px; width: 30px"></div>
+                            <span class="password-footer-text green-text">Special Character (!@#$%...)</span>
+                        </li>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+:root {
+    --yellow: lab(79.61% 12.13 81.97);
+    --grey: rgba(208, 208, 208, 0.629);
+    --lightblue: rgb(31, 31, 54);
+    --green: #85dc7c;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-cont {
+    height: 100vh;
+    width: 100%;
+    /*background-color: rgb(176, 170, 193);*/
+    background-color: rgb(158, 162, 171);
+}
+
+.password-ui-cont {
+    height: 410px;
+    width: 450px;
+    border-radius: 10px;
+    background-color: rgb(14, 14, 43);
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.password-ui-header {
+    color: #FFF;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.password-ui-header-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.header-sub, .password-footer-text {
+    color: var(--grey);
+    font-size: 13px;
+}
+
+.password-ui-text-cont {
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.password-ui-eye {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/eye-open.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    position: absolute;
+    right: 0;
+    opacity: 0.4;
+}
+
+.password-ui-eye:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.password-ui-text {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 45px;
+    font-size: 14px;
+}
+
+.password-meter-cont {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.level {
+    color: var(--yellow);
+}
+
+.password-meter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFF;
+}
+
+.password-meter-solid-cont {
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    background-color: var(--lightblue);
+    background: linear-gradient(to right, var(--yellow) 60%, var(--lightblue) 33%);
+}
+
+.password-meter-bars-cont {
+    width: 100%;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.bar {
+    width: 20%;
+    height: 5px;
+    background-color: var(--lightblue);
+    border-radius: 15px;
+}
+
+.yellow-bar {
+    background-color: var(--yellow);
+}
+
+.password-footer-list-cont {
+    border: 1px solid rgba(128, 128, 128, 0.536);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.password-footer-list-cont ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.password-footer-x {
+    height: 30px;
+    width: 30px;
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.grid-image {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.grid-image img {
+    filter: invert(70%);
+    height: 500px;
+    -webkit-mask-image: radial-gradient(circle at 30% 5%, rgb(0, 0, 0) 0%, transparent 35%);
+    opacity: 40%;
+}
